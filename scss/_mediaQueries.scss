@@ -1,0 +1,94 @@
+@media (max-width: 1200px) {
+    header {
+        margin-top: 20px;
+
+        span {
+            font-size: 40px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+    }
+
+    #wrapper {
+        width: 810px;
+        flex-direction: column;
+    }
+
+    #movePanel {
+        margin: 0px 5px !important;
+        width: 800px !important;
+        height: auto !important;
+        order: 1;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #moveControls {
+        justify-content: flex-start;
+
+        .arrow {
+            font-size: 30px;
+            margin: 0px 15px;
+        }
+    }
+
+    #notationPanel {
+        padding: 10px 0px;
+        font-size: 27px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: hidden;
+
+        span {
+            width: auto !important;
+            padding: 8px;
+            white-space: nowrap;
+            display: flex;
+        }
+
+        .outcomeSpan {
+            display: none !important;
+        }
+    }
+
+    #boardDiv {
+        order: 2;
+    }
+
+    #controlPanel {
+        order: 3;
+        flex-direction: row !important;
+        justify-content: space-around !important;
+        width: 800px !important;
+        height: 100px !important;
+        margin: 0px 5px !important;
+
+        .controlName {
+            display: none !important;
+        }
+
+        .controlElement {
+            transform: scale(1.6) !important;
+            width: auto;
+        }
+    }
+
+    #popup {
+        width: 400px;
+        height: 250px;
+
+        #question {
+            font-size: 35px;
+        }
+
+        input[type="button"] {
+            width: 140px;
+            height: 70px;
+            font-size: 30px;
+        }
+    }
+}

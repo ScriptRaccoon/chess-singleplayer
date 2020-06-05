@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Chess</title>
+		<link rel = "stylesheet" type = "text/css" href = "css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	</head>
+	
+	<body>
+
+		<header id = "header">
+			<span class="fas fa-chess"></span>
+			<h1>Chess</h1>
+			<span class="fas fa-chess"></span>
+		</header>
+
+		<div id = "wrapper">
+
+			<section id = "controlPanel">
+
+				<div class = "controlElement">
+					<div class = "controlName">
+						Turn
+					</div>
+					<div id = "circleImg" class = "whiteCircle"></div>
+				</div>
+
+				<div class = "controlElement">
+					<div class = "controlName">
+						Rotate
+					</div>
+					<span id = "rotateImg" class="fas fa-undo"></span>
+				</div>			
+
+				<div class = "controlElement">
+					<div class = "controlName">
+						Restart
+					</div>
+					<span id = "restartImg" class="fas fa-power-off"></span>
+				</div>
+
+				<div class = "controlElement">
+					<div class = "controlName">
+						Draw
+					</div>
+					<span id = "drawImg" class="far fa-handshake"></span>
+				</div>
+				
+				<div class = "controlElement">
+					<div class = "controlName">
+						Resign
+					</div>
+					<span id = "resignImg" class="far fa-flag"></span>
+				</div>
+
+				<div class = "controlElement">
+					<div class = "controlName">
+						Highlights
+					</div>
+					<div id = "highlightButton">
+						<div id = "movingCircle"></div>
+					</div>
+				</div>
+
+				<div class = "controlElement">
+					<span id = "infoImg" class="fa fa-info-circle" aria-hidden="true"></span>
+				</div>
+
+			</section>
+
+			<section id="boardDiv" class="board-unrotated">
+
+				<div id = "popup">
+					<div id = "question">						
+					</div>
+					<div>
+						<input id = "yesButton" type = "button" value = "Yes">
+						<input id = "cancelButton" type = "button" value = "Cancel">
+					</div>					
+				</div>
+
+				<div id = "infoText">
+					<p>This is a chess program made with HTML, JavaScript and CSS without any frameworks or libraries.</p>
+					<p>For the rules of chess, please consult other sources such as Wikipedia.</p>
+					<p>In the control panel on the left (or bottom on mobile devices), you can see the current turn, rotate the board,
+						restart, draw and resign the game. You can also toggle highlights
+						for the previous move, allowed squares and checks.</p>
+					<p>In the board in the middle, you can move the pieces either by selecting them with a
+						click and then selecting their target square or by dragging and dropping them.</p>
+					<p>In the notation panel on the right (or top on mobile devices), you can see the previous moves.
+						You can also click on them or use the arrow keys to restore previous game positions.
+						The game outcome is also displayed here.</p>
+					<p>Apart from stalemate there are three situations in which the game automatically draws:
+						<ul>
+							<li>There is insufficient material.</li>
+							<li>For 75 moves no pawn has been moved and no piece has been captured.</li>
+							<li>The same position has been on the board for 5 times for the same player.</li>
+						</ul>
+					</p>
+					<p>Chess is played with two players, but currently this program only works in one window
+						in which both players have to alternate making moves.</p>
+					<p>The game design is responsive, so that it changes when you resize the window or
+						use a mobile device.
+					</p>
+					<p style="float:right">Script Raccoon, 2020</p>
+					
+				</div>
+				
+			</section>			
+
+			<section id = "movePanel">
+				<nav id = "moveControls">					
+					<i class="fas fa-fast-backward arrow" id = "arrowLeftEnd"></i>
+					<i class="fas fa-step-backward arrow" id = "arrowLeft"></i>
+					<i class="fas fa-step-forward arrow" id = "arrowRight"></i>
+					<i class="fas fa-fast-forward arrow" id = "arrowRightEnd"></i>
+				</nav>
+				<section id = "notationPanel"></section>
+			</section>			
+
+		</div>
+
+	</body>
+	
+	<script type="module" src="./js/main.js"></script>
+	
+</html>

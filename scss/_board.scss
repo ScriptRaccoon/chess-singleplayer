@@ -1,0 +1,76 @@
+.board-unrotated {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.board-rotated {
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+.square {
+    width: $square-size;
+    height: $square-size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .square-danger,
+    .square-move,
+    .square-piece {
+        position: absolute;
+        width: $square-size;
+        height: $square-size;
+        z-index: 0;
+    }
+
+    .square-danger {
+        background-color: $square-danger-color;
+    }
+
+    .square-move {
+        background-color: $highlightMove-color;
+    }
+
+    .square-piece {
+        background-color: $square-piece-color;
+    }
+
+    .square-allowed {
+        position: absolute;
+        width: $square-size * 0.5 - 5px;
+        height: $square-size * 0.5 - 5px;
+        border-radius: 50%;
+        background-color: $square-allowed-color;
+        z-index: 1;
+    }
+}
+
+.square-dark {
+    background-color: $square-dark-color;
+}
+
+.square-light {
+    background-color: $square-light-color;
+}
+
+.piece {
+    position: absolute;
+    width: $square-size;
+    height: $square-size;
+    z-index: 2;
+    animation: pieceAnimation 300ms ease-out 1;
+
+    @keyframes pieceAnimation {
+        from {
+            transform: translate(var(--x-animation), var(--y-animation));
+        }
+        to {
+            transform: translate(0px, 0px);
+        }
+    }
+}
+
+.piece:hover {
+    cursor: pointer;
+}

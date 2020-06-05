@@ -1,0 +1,79 @@
+.controlElement {
+    text-align: center;
+    width: 100%;
+    opacity: 0.6;
+    transition: opacity 150ms ease-in;
+
+    .controlName {
+        color: $square-light-color;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+}
+
+.controlElement:first-child {
+    opacity: 1;
+}
+
+.controlElement:hover {
+    opacity: 1;
+}
+
+#rotateImg,
+#restartImg,
+#drawImg,
+#resignImg,
+#infoImg {
+    font-size: 28px;
+    color: $square-light-color;
+    cursor: pointer;
+}
+
+#circleImg {
+    margin: -5px auto;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid $shade-color;
+}
+
+.whiteCircle {
+    background: linear-gradient(to bottom right, white, $shade-color);
+}
+
+.blackCircle {
+    background: linear-gradient(to bottom right, black, $shade-color);
+}
+
+#highlightButton {
+    margin: 0 auto;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: $highlightMove-color;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    #movingCircle {
+        position: absolute;
+        right: 0px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: white;
+        transition: all 90ms ease-in;
+    }
+
+    .circleOff {
+        right: 22px !important;
+    }
+}
+
+.buttonOff {
+    background-color: $square-danger-color !important;
+}
+
+#highlightButton:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,32 @@
+#wrapper {
+    margin: 0px auto;
+    width: $wrapper-width;
+    display: flex;
+    justify-content: center;
+
+    #controlPanel {
+        width: 100px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 13px;
+        margin: 5px 0px;
+    }
+
+    #boardDiv {
+        width: 800px;
+        height: 800px;
+        display: flex;
+        border: 5px solid $board-border-color;
+        position: relative;
+    }
+
+    #movePanel {
+        width: 270px;
+        height: 800px;
+        font-size: 16px;
+        margin: 5px 10px;
+    }
+}

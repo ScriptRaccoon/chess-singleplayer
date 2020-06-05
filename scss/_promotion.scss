@@ -1,0 +1,33 @@
+.promotion {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 100px;
+    border: 5px solid $board-border-color;
+    background-color: $square-light-color;
+    display: flex;
+    animation: appear 150ms ease-in-out 1 forwards;
+    box-shadow: 0px 0px 5px $board-border-color;
+    z-index: 3;
+
+    @keyframes appear {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    img {
+        width: $square-size;
+        height: $square-size;
+    }
+
+    img:hover {
+        background-color: $highlightMove-color;
+        cursor: pointer;
+    }
+}

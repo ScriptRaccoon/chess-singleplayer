@@ -1,0 +1,25 @@
+#infoText {
+    position: absolute;
+    text-align: justify;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    height: 87%;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    color: black;
+    font-size: 16px;
+    z-index: 5;
+    border-radius: 20px;
+    border: 1px solid $board-border-color;
+    display: none;
+
+    p:first-child {
+        margin: 0;
+    }
+
+    li {
+        padding: 2px 0px;
+    }
+}
