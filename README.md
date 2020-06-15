@@ -1,6 +1,6 @@
 ## Chess (single player)
 
-Demo: https://1w7e3.csb.app/
+Demo: https://1w7e3.codesandbox.io/
 
 This is a chess program made with HTML, JavaScript and CSS without any frameworks or libraries.
 
