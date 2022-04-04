@@ -1,6 +1,6 @@
 ## Chess (single player)
 
-Demo: https://chess-singleplayer.netlify.app/
+Demo: https://chess-singleplayer.netlify.app
 
 This is a chess program made with HTML, JavaScript and CSS without any frameworks or libraries.
 
